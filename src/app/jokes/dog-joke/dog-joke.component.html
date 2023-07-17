@@ -1,0 +1,22 @@
+<div class="container">
+
+  <div class="image-container">
+    <div class="image-wrap">
+        <img [src]="imageUrl" alt="Dog Image" />
+    </div>
+  </div>
+
+  <div>
+    <h4>{{ setup }}</h4>
+    <p>{{ punchline }}</p>
+
+    <button
+      (click)="loadNewRandomJoke()"
+      type="button"
+      class="btn"
+    >
+      {{ counter }} seconds
+    </button>
+  </div>
+</div>
+
